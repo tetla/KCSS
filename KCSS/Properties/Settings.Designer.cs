@@ -46,5 +46,113 @@ namespace KCSS.Properties {
                 this["WindowY"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SavePath {
+            get {
+                return ((string)(this["SavePath"]));
+            }
+            set {
+                this["SavePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        public string ShotCycle {
+            get {
+                return ((string)(this["ShotCycle"]));
+            }
+            set {
+                this["ShotCycle"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool SaveOne {
+            get {
+                return ((bool)(this["SaveOne"]));
+            }
+            set {
+                this["SaveOne"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SaveMemory {
+            get {
+                return ((bool)(this["SaveMemory"]));
+            }
+            set {
+                this["SaveMemory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SavePeriod {
+            get {
+                return ((bool)(this["SavePeriod"]));
+            }
+            set {
+                this["SavePeriod"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool SavePng {
+            get {
+                return ((bool)(this["SavePng"]));
+            }
+            set {
+                this["SavePng"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SaveJpg {
+            get {
+                return ((bool)(this["SaveJpg"]));
+            }
+            set {
+                this["SaveJpg"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SaveBmp {
+            get {
+                return ((bool)(this["SaveBmp"]));
+            }
+            set {
+                this["SaveBmp"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SaveAlarm {
+            get {
+                return ((bool)(this["SaveAlarm"]));
+            }
+            set {
+                this["SaveAlarm"] = value;
+            }
+        }
     }
 }

@@ -19,26 +19,19 @@ namespace KCSS
         public Point KanCollePosition()
         {
             var i = 0;
-            string[] files = System.IO.Directory.GetFiles(System.IO.Directory.GetCurrentDirectory() + @"\" + "check", "*png");
+            string[] files = System.IO.Directory.GetFiles(System.IO.Directory.GetCurrentDirectory() + @"\" + "check", "*bmp");
             foreach (var item in files)
             {
                 var Wp = CheckPosition(item);
                 if (Wp.X != 0 || Wp.Y != 0)
                 {
-                    switch (i)
-                    {
-                        case 0: 
-                            Wp.X -= 150;
-                            Wp.Y -= 230;
-                            break;
-                        case 1:
-                            Wp.X -= 160;
-                            Wp.Y -= 270;
-                            break;
 
-                        default:
-                            break;
-                    }
+                    string[] stArrayData = item.Split('\\');
+                    string[] hoge = stArrayData[stArrayData.Length - 1].Split('.');
+                    string[] hoge2 = hoge[0].Split('-');
+
+                    Wp.X -= int.Parse(hoge2[0]);
+                    Wp.Y -= int.Parse(hoge2[1]);
                     return Wp;
                 }
                 i++;
